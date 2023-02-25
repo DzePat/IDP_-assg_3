@@ -55,12 +55,19 @@
                     smältpunkt = "234.3210",
                     kokpunkt = "629.88"},
                 };
-            //uppgift 4 add a foreach loop that prints all the elements out from the array
+            //uppgift 5 add a foreach loop that prints all the elements out from the array
             foreach(Element element in elements)
             {
                 element.print();
             };
-  
+            // uppgift 6 add a foreach loop that only prints out the name of the element that is metal
+            foreach (Element element in elements)
+            {
+                if (element.typ == "metall")
+                {
+                    Console.WriteLine(element.namn);
+                }
+            };
         }
     }
 }
