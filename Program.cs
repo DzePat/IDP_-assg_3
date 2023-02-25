@@ -19,7 +19,6 @@
         }
 
         //uppgift 2 add 3 elements syre,järn, guld
-        //uppgift 4 made an array of 6 elements, assigned 3 existing elements to 0-2 index and added 3 new elements to the remaining indexes
         public static void Main(string[] args)
         {
             Element syre = new Element() { namn = "syre", atomnummer = "8", typ = "ickemetall", smältpunkt = "55.36", kokpunkt = "90.188" };
@@ -28,6 +27,7 @@
             syre.print();
             järn.print();
             guld.print();
+            //uppgift 4 add an array of 6 elements, assign 3 existing elements to 0-2 index and assign 3 new elements to the remaining indexes
             Element[] elements = new Element[6]
                 {
                 syre,
@@ -55,7 +55,12 @@
                     smältpunkt = "234.3210",
                     kokpunkt = "629.88"},
                 };
-
+            //uppgift 4 add a foreach loop that prints all the elements out from the array
+            foreach(Element element in elements)
+            {
+                element.print();
+            };
+  
         }
     }
 }
